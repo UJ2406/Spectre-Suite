@@ -22,11 +22,10 @@ This dashboard allows you to gather intelligence on networks, domains, users, an
 
 | Main Dashboard | Scans Menu | Port Scanner (with CVEs) |
 | :---: | :---: | :---: |
-| ![Dashboard Screenshot](https://imgur.com/3mkc3Wf) | ![Scans Menu Screenshot](https://i.imgur.com/YOUR_IMAGE_URL.png) | ![Port Scan Screenshot](https://i.imgur.com/YOUR_IMAGE_URL.png) |
+| ![Dashboard Screenshot](https://i.imgur.com/3mkc3Wf.png) | ![Scans Menu Screenshot](https://i.imgur.com/FKIcVDg.png) | ![Port Scan Screenshot](https://i.imgur.com/sauuXiu.png) |
 | **Domain Recon** | **Directory Scan** | **Reports Page** |
-| ![Domain Recon Screenshot](https://i.imgur.com/YOUR_IMAGE_URL.png) | ![Directory Scan Screenshot](https://i.imgur.com/YOUR_IMAGE_URL.png) | ![Reports Page Screenshot](https://i.imgur.com/YOUR_IMAGE_URL.png) |
+| ![Domain Recon Screenshot](https://i.imgur.com/4hFClDy.png) | ![Directory Scan Screenshot](https://i.imgur.com/MmWyaoe.png) | ![Reports Page Screenshot](https://i.imgur.com/DtQvKma.png) |
 
-*(**Action:** Take screenshots of your app, upload them to [Imgur](https://imgur.com/upload), and replace the placeholder URLs!)*
 
 ---
 
@@ -69,3 +68,40 @@ Make sure you have [Python 3](https://www.python.org/downloads/) and [Git](https
 ```bash
 git clone [https://github.com/YOUR-USERNAME/Spectre-Suite.git](https://github.com/YOUR-USERNAME/Spectre-Suite.git)
 cd Spectre-Suite
+
+```
+**2. Set up a Virtual Environment (Recommended):**
+```bash
+# Create a virtual environment
+python -m venv venv
+
+# Activate it
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+```
+**3. Install Dependencies: The requirements.txt file is located in the titan-intel sub-directory.**
+```bash
+pip install -r titan-intel/requirements.txt
+pip install flask
+```
+**4. Run the Application:**
+```bash
+# Navigate into the dashboard directory
+cd Dashboard
+
+# Run the Flask app
+python app.py
+```
+**5. Access the Dashboard: Open your browser and go to: http://127.0.0.1:5000**
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+
+
