@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Directory Scan - Spectre Suite{% endblock %} {% block content %}
+<header>
+    <h1>Directory Scan</h1>
+    <p>Search for common hidden files and directories on a target server.</p>
+</header>
+
+<main class="dashboard-grid single-tool">
+    <div class="widget">
+        <h2><span class="icon">📁</span> Directory Scan</h2>
+        <form id="dir-scan-form" class="scan-form">
+            <input type="text" name="url" placeholder="URL (e.g., scanme.nmap.org)">
+            <button type="submit">Scan</button>
+        </form>
+        <div class="results-output" id="dir-scan-results">
+            <p>Awaiting orders...</p>
+        </div>
+    </div>
+</main>
+{% endblock %}

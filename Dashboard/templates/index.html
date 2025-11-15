@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Home - Spectre Suite{% endblock %}
+{% block content %}
+<header>
+    <h1>Welcome to the Command Center</h1>
+    <p>All intelligence operations are managed from this console.</p>
+</header>
+
+<div class="home-grid">
+    <a href="{{ url_for('scans') }}" class="home-card scans">
+        <div class="card-icon">💥</div>
+        <h2>Launch Scans</h2>
+        <p>Deploy Spectre Suite scanners and other tools against targets.</p> {# <-- CHANGED HERE #}
+    </a>
+    
+    <a href="{{ url_for('reports') }}" class="home-card reports">
+        <div class="card-icon">📜</div>
+        <h2>View Reports</h2>
+        <p>Review all after-action reports from past reconnaissance missions.</p>
+    </a>
+    
+    <a href="{{ url_for('live_feed') }}" class="home-card learn">
+        <div class="card-icon">🛡️</div>
+        <h2>Live Threat Feed</h2>
+        <p>View the latest Known Exploited Vulnerabilities from CISA.</p>
+    </a>
+</div>
+{% endblock %}

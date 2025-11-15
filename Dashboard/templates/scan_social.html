@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Social Scout - Spectre Suite{% endblock %}
+{% block content %}
+<header>
+    <h1>Social Media Scout</h1>
+    <p>Find user profiles across all major social and tech sites.</p>
+</header>
+
+<main class="dashboard-grid single-tool">
+    <div class="widget">
+        <h2><span class="icon">👥</span> Social Media Scout</h2>
+        <form id="social-scout-form" class="scan-form">
+            <input type="text" name="username" placeholder="Username (e.g., shiva_24)">
+            <button type="submit">Scout</button>
+        </form>
+        <div class="results-output" id="social-scout-results">
+            <p>Awaiting orders...</p>
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Scan Tools - Spectre Suite{% endblock %}
+{% block content %}
+<header>
+    <h1>Operations Console</h1>
+    <p>Select a reconnaissance tool to deploy.</p>
+</header>
+
+<div class="home-grid">
+    
+    <a href="{{ url_for('scan_port') }}" class="home-card scans">
+        <div class="card-icon">💥</div>
+        <h2>Port Scan</h2> {# <-- CHANGED HERE #}
+        <p>Scan a target for open ports, services, and vulnerabilities.</p>
+    </a>
+    
+    <a href="{{ url_for('scan_domain') }}" class="home-card reports">
+        <div class="card-icon">🗺️</div>
+        <h2>Domain Recon</h2>
+        <p>Find WHOIS, DNS, and subdomains for a target domain.</p>
+    </a>
+    
+    <a href="{{ url_for('scan_social') }}" class="home-card learn">
+        <div class="card-icon">👥</div>
+        <h2>Social Media Scout</h2>
+        <p>Find user profiles across all major social and tech sites.</p>
+    </a>
+
+    <a href="{{ url_for('scan_email') }}" class="home-card scans">
+        <div class="card-icon">📧</div>
+        <h2>Email Breach Check</h2>
+        <p>Check an email address against the XposedOrNot breach database.</p>
+    </a>
+
+    <a href="{{ url_for('scan_tech') }}" class="home-card reports">
+        <div class="card-icon">⚙️</div>
+        <h2>Website Tech Scan</h2>
+        <p>Identify a website's technology stack and server headers.</p>
+    </a>
+
+    <a href="{{ url_for('scan_directory') }}" class="home-card learn">
+        <div class="card-icon">📁</div>
+        <h2>Directory Scan</h2>
+        <p>Find hidden files and admin directories on a website.</p>
+    </a>
+</div>
+{% endblock %}

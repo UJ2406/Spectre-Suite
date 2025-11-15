@@ -1,0 +1,20 @@
+--- Directory Scan Report ---
+Time: 2025-11-16 00:57:05
+Target URL: https://github.com
+--------------------------------------
+
+Found 13 interesting paths:
+
+[+] Status 200: https://github.com/administrator
+[+] Status 200: https://github.com/login
+[+] Status 200: https://github.com/panel
+[+] Status 200: https://github.com/cpanel
+[+] Status 200: https://github.com/robots.txt
+[+] Status 200: https://github.com/config
+[+] Status 200: https://github.com/backup
+[+] Status 200: https://github.com/test
+[+] Status 200: https://github.com/phpmyadmin
+[+] Status 200: https://github.com/secret
+[+] Status 200: https://github.com/logs
+[+] Status 200: https://github.com/readme.html
+[+] Status 302: https://github.com/dashboard

@@ -1,0 +1,42 @@
+--- Domain Recon Report ---
+Time: 2025-11-15 23:45:45
+Target Domain: youtube.com
+--------------------------------------
+
+--- FOUND SUBDOMAINS ---
+[+] admin.youtube.com
+[+] www.youtube.com
+
+--- DNS RECORDS ---
+[*] A:
+    172.217.23.206
+[*] AAAA:
+    2a00:1450:400e:810::200e
+[*] MX:
+    0 smtp.google.com.
+[*] TXT:
+    "facebook-domain-verification=64jdes7le4h7e7lfpi22rijygx58j1"
+    "google-site-verification=QtQWEwHWM8tHiJ4s-jJWzEQrD_fF3luPnpzNDH-Nw-w"
+    "v=spf1 include:google.com mx -all"
+[*] NS:
+    ns1.google.com.
+    ns2.google.com.
+    ns3.google.com.
+    ns4.google.com.
+[*] SOA:
+    ns1.google.com. dns-admin.google.com. 832299329 900 900 1800 60
+
+--- WHOIS INFO ---
+domain_name: YOUTUBE.COM
+registrar: MarkMonitor, Inc.
+registrar_url: http://www.markmonitor.com
+whois_server: whois.markmonitor.com
+updated_date: 2025-01-14 10:06:34+00:00
+creation_date: 2005-02-15 05:13:12+00:00
+expiration_date: [datetime.datetime(2026, 2, 15, 5, 13, 12, tzinfo=tzoffset('UTC', 0)), datetime.datetime(2026, 2, 15, 0, 0, tzinfo=tzoffset('UTC', 0))]
+name_servers: ['NS1.GOOGLE.COM', 'NS2.GOOGLE.COM', 'NS3.GOOGLE.COM', 'NS4.GOOGLE.COM']
+status: ['clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited', 'clientTransferProhibited https://icann.org/epp#clientTransferProhibited', 'clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited', 'serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited', 'serverTransferProhibited https://icann.org/epp#serverTransferProhibited', 'serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited', 'clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)', 'clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)', 'clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)', 'serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)', 'serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)', 'serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)']
+emails: ['abusecomplaints@markmonitor.com', 'whoisrequest@markmonitor.com']
+dnssec: unsigned
+org: Google LLC
+country: US

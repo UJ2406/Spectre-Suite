@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Spectre Suite{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+
+    <div class="container">
+        <nav class="sidebar">
+            <div class="nav-logo">
+                <img src="{{ url_for('static', filename='img/aot_logo.png') }}" alt="Logo">
+                <span>Spectre Suite</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}" class="{{ 'active' if request.path == url_for('index') else '' }}">
+                    <span class="icon">🏠</span> Home
+                </a></li>
+                <li><a href="{{ url_for('scans') }}" class="{{ 'active' if 'scans' in request.path else '' }}">
+                    <span class="icon">💥</span> Scans
+                </a></li>
+                <li><a href="{{ url_for('reports') }}" class="{{ 'active' if request.path == url_for('reports') else '' }}">
+                    <span class="icon">📜</span> Reports
+                </a></li>
+                <li><a href="{{ url_for('live_feed') }}" class="{{ 'active' if request.path == url_for('live_feed') else '' }}">
+                    <span class="icon">🛡️</span> Live Feed
+                </a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

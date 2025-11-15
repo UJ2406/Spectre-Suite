@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Reports - Spectre Suite{% endblock %} {% block content %}
+<header>
+    <h1>After-Action Reports</h1>
+    <p>Review completed mission intelligence.</p>
+</header>
+
+<div class="widget">
+    <h2><span class="icon">📜</span> Saved Report Files</h2>
+    <div class="results-output">
+        {% if reports %}
+            <ul class="report-list">
+                {% for report in reports %}
+                    <li>
+                        <span>{{ report }}</span>
+                        <div class="report-buttons">
+                            <a href="{{ url_for('static', filename='reports/' + report) }}" target="_blank" class="btn-view">View</a>
+                            <a href="{{ url_for('static', filename='reports/' + report) }}" class="btn-download" download>Download</a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No reports found. Complete a scan on the 'Scans' page to generate one.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

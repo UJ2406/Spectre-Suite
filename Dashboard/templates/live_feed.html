@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Live Feed - Spectre Suite{% endblock %} {% block content %}
+<header>
+    <h1>Live Threat Feed</h1>
+    <p>Latest Known Exploited Vulnerabilities (KEV) from CISA.</p>
+</header>
+
+<div class="widget" id="threat-feed-widget">
+    <h2><span class="icon">🛡️</span> CISA KEV</h2>
+    <div class="results-output" id="threat-feed-output">
+        <p class="loading">Fetching intel from CISA...</p>
+    </div>
+</div>
+{% endblock %}

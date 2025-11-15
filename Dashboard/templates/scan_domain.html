@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Domain Recon - Spectre Suite{% endblock %}
+{% block content %}
+<header>
+    <h1>Domain Recon</h1>
+    <p>Find WHOIS, DNS, and subdomains for a target domain.</p>
+</header>
+
+<main class="dashboard-grid single-tool">
+    <div class="widget">
+        <h2><span class="icon">🗺️</span> Domain Recon</h2>
+        <form id="domain-recon-form" class="scan-form">
+            <input type="text" name="domain" placeholder="Domain (e.g., google.com)">
+            <button type="submit">Run Recon</button>
+        </form>
+        <div class="results-output" id="domain-recon-results">
+            <p>Awaiting orders...</p>
+        </div>
+    </div>
+</main>
+{% endblock %}

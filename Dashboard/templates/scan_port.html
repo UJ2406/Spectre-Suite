@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Port Scan - Spectre Suite{% endblock %}
+{% block content %}
+<header>
+    <h1>Port Scan</h1> {# <-- CHANGED HERE #}
+    <p>Scan a target for open ports, services, and known vulnerabilities.</p>
+</header>
+
+<main class="dashboard-grid single-tool">
+    <div class="widget">
+        <h2><span class="icon">💥</span> Port Scan</h2>
+        <form id="port-scan-form" class="scan-form">
+            <input type="text" name="target" placeholder="Target (e.g., scanme.nmap.org)">
+            <input type="text" name="ports" placeholder="Ports (e.g., 80,443 or leave blank for top 100)">
+            <button type="submit">Scan Ports</button>
+        </form>
+        <div class="results-output" id="port-scan-results">
+            <p>Awaiting orders...</p>
+        </div>
+    </div>
+</main>
+{% endblock %}

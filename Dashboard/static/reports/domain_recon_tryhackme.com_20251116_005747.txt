@@ -1,0 +1,58 @@
+--- Domain Recon Report ---
+Time: 2025-11-16 00:57:47
+Target Domain: tryhackme.com
+--------------------------------------
+
+--- FOUND SUBDOMAINS ---
+[+] admin.tryhackme.com
+[+] blog.tryhackme.com
+[+] www.tryhackme.com
+
+--- DNS RECORDS ---
+[*] A:
+    172.66.164.239
+    104.20.29.66
+[*] AAAA:
+    2606:4700:10::ac42:a4ef
+    2606:4700:10::6814:1d42
+[*] MX:
+    5 alt2.aspmx.l.google.com.
+    10 alt3.aspmx.l.google.com.
+    10 alt4.aspmx.l.google.com.
+    1 aspmx.l.google.com.
+    5 alt1.aspmx.l.google.com.
+[*] TXT:
+    "v=spf1 include:_spf.google.com include:email.chargebee.com include:7168674.spf05.hubspotemail.net ~all"
+    "6ca7e8e9845fa51969caa46c95cf230d"
+    "google-site-verification=AlFrMBXuBQ-zDeey1Qo8m0dRJRUrrNBMnFa4r4aX4gI"
+    "google-site-verification=umR4x8HuzWMF5g3656JY1b-61NuryD0-GqGnYN13ONo"
+[*] NS:
+    uma.ns.cloudflare.com.
+    kip.ns.cloudflare.com.
+[*] SOA:
+    kip.ns.cloudflare.com. dns.cloudflare.com. 2387859340 10000 2400 604800 1800
+
+--- WHOIS INFO ---
+domain_name: TRYHACKME.COM
+registrar: NAMECHEAP INC
+registrar_url: http://www.namecheap.com
+reseller: NAMECHEAP INC
+whois_server: whois.namecheap.com
+updated_date: [datetime.datetime(2025, 5, 11, 14, 6, 2, tzinfo=tzoffset('UTC', 0)), datetime.datetime(2025, 5, 11, 14, 6, 3, tzinfo=tzoffset('UTC', 0))]
+creation_date: 2018-07-05 19:46:15+00:00
+expiration_date: 2034-07-05 19:46:15+00:00
+name_servers: ['KIP.NS.CLOUDFLARE.COM', 'UMA.NS.CLOUDFLARE.COM']
+status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+emails: ['abuse@namecheap.com', 'a70a4ff6d25041a48378997194f9e834.protect@withheldforprivacy.com']
+dnssec: unsigned
+name: Redacted for Privacy
+org: Privacy service provided by Withheld for Privacy ehf
+address: Kalkofnsvegur 2
+city: Reykjavik
+state: Capital Region
+registrant_postal_code: 101
+country: IS
+tech_name: Redacted for Privacy
+tech_org: Privacy service provided by Withheld for Privacy ehf
+admin_name: Redacted for Privacy
+admin_org: Privacy service provided by Withheld for Privacy ehf

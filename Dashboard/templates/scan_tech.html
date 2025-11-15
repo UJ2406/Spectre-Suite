@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Email Check - Spectre Suite{% endblock %} {% block content %}
+<header>
+    <h1>Email Breach Check</h1>
+    <p>Check an email against the XposedOrNot breach database.</p>
+</header>
+
+<main class="dashboard-grid single-tool">
+    <div class="widget">
+        <h2><span class="icon">📧</span> Email Breach Check</h2>
+        <form id="email-check-form" class="scan-form">
+            <input type="email" name="email" placeholder="Email (e.g., test@example.com)">
+            <button type="submit">Check Email</button>
+        </form>
+        <div class="results-output" id="email-check-results">
+            <p>Awaiting orders...</p>
+        </div>
+    </div>
+</main>
+{% endblock %}
